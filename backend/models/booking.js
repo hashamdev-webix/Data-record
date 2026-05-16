@@ -53,14 +53,21 @@ const bookingSchema = new mongoose.Schema(
       required: true,
     },
     email: {
-  type: String,
-  required: true,
-},
-
-phone: {
-  type: String,
-  required: true,
-},
+      type: String,
+      required: true,
+    },
+    phone: {
+      type: String,
+      required: true,
+    },
+    addedBy: {
+      type: String,
+      trim: true,
+    },
+    scopeOfWork: {
+      type: String,
+      trim: true,
+    },
   },
   { timestamps: true }
 );
